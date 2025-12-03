@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Principal -->
+    <title>Método Brownie de Ouro™ - Receitas Secretas da Beca | Curso Completo</title>
+    <meta name="description" content="Aprenda a fazer brownies profissionais com casquinha perfeita e lucre de R$ 500 a R$ 3.000 por mês. Método testado, sem equipamentos caros. Garanta sua vaga!">
+    <meta name="keywords" content="curso de brownie, vender brownie, renda extra confeitaria, receita brownie gourmet, becca brownies, como fazer brownie para vender">
+    <meta name="author" content="Receitas Secretas da Beca">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.receitasdabeca.com.br/"> <!-- Altere para seu domínio real -->
+
+    <!-- Open Graph / Facebook / WhatsApp (Essencial para compartilhamento) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.receitasdabeca.com.br/">
+    <meta property="og:title" content="Método Brownie de Ouro™ - Transforme Brownies em Renda">
+    <meta property="og:description" content="Descubra o segredo da casquinha perfeita e fature alto na sua cozinha. Clique para ver o vídeo e os bônus!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?q=80&w=1200&auto=format&fit=crop"> <!-- Imagem que aparece no Whats -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.receitasdabeca.com.br/">
+    <meta property="twitter:title" content="Método Brownie de Ouro™">
+    <meta property="twitter:description" content="Aprenda a fazer brownies profissionais e lucre trabalhando de casa.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Favicon (Ícone da aba do navegador) -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/brownie.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#FFF0F5',
+                            pink: '#FFC0CB',
+                            dark: '#DB2777',
+                            accent: '#F472B6',
+                            green: '#10B981',
+                            greenHover: '#059669',
+                            gold: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'pattern-cubes': "url('https://www.transparenttextures.com/patterns/cubes.png')",
+                        'pattern-dots': "url('data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23DB2777' fill-opacity='0.1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E')",
+                        'wave-divider': "url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1440 320\'%3E%3Cpath fill=\'%23FFF0F5\' fill-opacity=\'1\' d=\'M0,96L80,122.7C160,149,320,203,480,202.7C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z\'%3E%3C/path%3E%3C/svg%3E')"
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Estilos CSS Personalizados -->
+    <style>
+        /* ... Seus estilos CSS atuais permanecem aqui ... */
+        body { font-family: 'Open Sans', sans-serif; color: #4A4A4A; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .btn-pulse { animation: pulse-animation 2s infinite; }
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        .cursive-signature { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem; }
+        .brownie-card img { transition: transform 0.5s ease; }
+        .brownie-card:hover img { transform: scale(1.05); }
+        .carousel-container { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+        .carousel-container::-webkit-scrollbar { display: none; }
+        .carousel-item { scroll-snap-align: center; flex: none; width: 85%; margin-right: 1rem; }
+        @media (min-width: 768px) { .carousel-item { width: calc(33.333% - 1rem); } }
+        .section-divider { position: relative; height: 60px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFF0F5' fill-opacity='1' d='M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,213.3C1120,224,1280,224,1360,224L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'%3E%3C/path%3E%3C/svg%3E"); background-size: cover; background-repeat: no-repeat; background-position: center bottom; margin-top: -60px; z-index: 20; }
+        .wave-divider-bottom { height: 120px; width: 100%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFF0F5' fill-opacity='1' d='M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,170.7C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'%3E%3C/path%3E%3C/svg%3E"); background-size: cover; background-repeat: no-repeat; background-position: center bottom; margin-bottom: -1px; }
+        .mockup-3d { transform: perspective(1000px) rotateY(-15deg) rotateX(5deg); box-shadow: -20px 20px 40px rgba(0,0,0,0.3); transition: transform 0.5s ease; }
+        .mockup-3d:hover { transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) scale(1.02); }
+        .price-strike { position: relative; display: inline-block; }
+        .price-strike::after { content: ''; position: absolute; top: 50%; left: -5%; width: 110%; height: 2px; background-color: #EF4444; transform: rotate(-10deg); }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Top Warning Bar -->
+    <div class="bg-brand-dark text-white text-center py-3 text-xs md:text-sm font-bold uppercase tracking-wider sticky top-0 z-50 shadow-md">
+        <i class="fas fa-clock mr-2 text-brand-pink"></i> Oferta Expira em: <span id="top-timer" class="text-white">47:23:15</span>
+    </div>
+
+    <!-- FOLD 1: HERO SECTION -->
+    <section class="bg-white pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden relative z-10">
+        <div class="absolute inset-0 opacity-5 pointer-events-none bg-pattern-cubes"></div>
+
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+                
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
+                    <p class="text-brand-dark font-bold text-xs md:text-sm mb-4 uppercase tracking-wide bg-pink-100 inline-block px-3 py-1 rounded-full">
+                        <i class="fas fa-star text-brand-dark mr-1"></i> Método Comprovado
+                    </p>
+                    
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                        Como Fazer Brownies Que Todo Mundo <span class="text-brand-dark bg-pink-50 px-2 rounded relative ">Quer Comprar <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg"><path d="M 0,10 C 50,0 150,20 200,10" stroke="#DB2777" fill="none" stroke-width="2"></path></svg></span> (E Pagar Bem Por Eles)
+                    </h1>
+
+                    <h2 class="text-base md:text-lg text-gray-600 font-medium mb-8 leading-relaxed">
+                        O método completo para criar brownies com qualidade profissional e transformar sua paixão em renda extra - sem equipamentos caros ou anos de experiência.
+                    </h2>
+
+                    <div class="flex flex-col space-y-4">
+                        <a href="#checkout" class="btn-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-xl transition duration-300 w-full md:w-auto text-center border-b-4 border-green-700">
+                            QUERO APRENDER AGORA
+                            <span class="block text-xs font-normal mt-1 opacity-90">Acesso Imediato + Bônus Exclusivos</span>
+                        </a>
+                        <p class="text-xs text-gray-400 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
+                            <i class="fas fa-lock text-brand-dark"></i> Compra 100% Segura
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hero Image (Larger & Symmetrical) -->
+                <div class="w-full md:w-1/2 order-1 md:order-2 flex justify-center items-center">
+                    <div class="relative w-full max-w-lg">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white transform md:scale-105 transition duration-500">
+                             <img src="Imagem do WhatsApp de 2025-11-27 à(s) 16.18.21_0dd44090.jpg" alt="Rebeca com Brownies" class="w-full h-auto object-cover md:max-h-[550px]" 
+                                  onerror="this.src='https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=1000&auto=format&fit=crop'">
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-4 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3 border-2 border-pink-100 animate-bounce z-20">
+                            <div class="bg-pink-100 p-3 rounded-full text-brand-dark text-xl">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-semibold">Receitas que</p>
+                                <p class="font-bold text-brand-dark text-base">Vendem Todo Dia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transition Divider -->
+    <div class="section-divider"></div>
+
+    <!-- FOLD 2: PROBLEM AMPLIFICATION (Visual Comparison) -->
+    <section class="py-16 bg-brand-light relative z-0">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <i class="fas fa-chevron-down text-3xl text-brand-dark animate-bounce"></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mt-4 mb-2">
+                    A Diferença Entre "Bolo Embatumado" e <span class="text-brand-dark">Lucro no Bolso</span>
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base">Por que algumas vendem por R$ 15 e outras não conseguem vender por R$ 5?</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+                <!-- Amateur Side -->
+                <div class="bg-white p-4 rounded-xl shadow-md border border-gray-200 opacity-80 transform hover:scale-105 transition">
+                    <div class="relative h-48 mb-4 rounded-lg overflow-hidden bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1589218436045-ee320057f443?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover grayscale filter contrast-125" alt="Brownie Amador"
+                             onerror="this.src='https://images.unsplash.com/photo-1516919549054-e08258825f80?q=80&w=600&auto=format&fit=crop'">
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                            <span class="bg-red-600 text-white px-4 py-1 text-sm font-bold rounded-full uppercase tracking-wider shadow-sm">Amador</span>
+                        </div>
+                    </div>
+                    <ul class="text-sm space-y-3 text-gray-500">
+                        <li class="flex items-center"><i class="fas fa-times-circle text-red-400 text-lg mr-3"></i> Sem casquinha</li>
+                        <li class="flex items-center"><i class="fas fa-times-circle text-red-400 text-lg mr-3"></i> Seco ou cru demais</li>
+                        <li class="flex items-center font-bold text-red-500"><i class="fas fa-tag text-lg mr-3"></i> Preço: R$ 3,00 - R$ 5,00</li>
+                    </ul>
+                </div>
+
+                <!-- VS Icon -->
+                <div class="md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 flex justify-center -my-6 md:my-0 z-10 pointer-events-none">
+                    <div class="bg-brand-dark text-white w-14 h-14 rounded-full flex items-center justify-center font-extrabold shadow-lg border-4 border-white text-xl">VS</div>
+                </div>
+
+                <!-- Pro Side (Fixed Image & Pop) -->
+                <div class="bg-white p-4 rounded-xl shadow-2xl border-2 border-brand-dark transform md:scale-105 relative z-0">
+                    <div class="absolute -top-4 right-4 bg-brand-dark text-white text-xs font-bold px-4 py-1 rounded-full shadow-md uppercase tracking-wider">Seu Objetivo</div>
+                    <div class="relative h-48 mb-4 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Brownie Profissional"
+                             onerror="this.src='https://images.unsplash.com/photo-1600431562968-30509c597599?q=80&w=600&auto=format&fit=crop'">
+                    </div>
+                    <ul class="text-sm space-y-3 text-gray-800 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 text-lg mr-3"></i> Casquinha Craquelada</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 text-lg mr-3"></i> Úmido e Denso</li>
+                        <li class="flex items-center font-bold text-green-600"><i class="fas fa-tag text-lg mr-3"></i> Preço: R$ 12,00 - R$ 18,00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mid-Page CTA -->
+            <div class="mt-12 text-center">
+                <a href="#checkout" class="btn-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-md transition duration-300 inline-block border-b-4 border-green-700">
+                    QUERO APRENDER A FAZER O BROWNIE PERFEITO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLD 3: SOLUTION (The Method) -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-16">
+                <span class="text-brand-dark font-bold tracking-widest uppercase text-sm bg-pink-50 px-4 py-1 rounded-full">O Segredo Revelado</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-6">Os 3 Pilares do Método Brownie de Ouro™</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Pillar 1 -->
+                <div class="flex-1 bg-brand-light p-8 rounded-3xl border-b-4 border-brand-dark text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-dark text-3xl shadow-sm group-hover:scale-110 transition">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">1. Golden Batch™</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">A química exata para garantir a casquinha perfeita em qualquer forno, sem erros.</p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="flex-1 bg-brand-light p-8 rounded-3xl border-b-4 border-brand-dark text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-dark text-3xl shadow-sm group-hover:scale-110 transition">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">2. Fenômeno S.H.A.P.E.</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Estrutura firme para um corte limpo, sem esfarelar, e a altura de um brownie gourmet.</p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="flex-1 bg-brand-light p-8 rounded-3xl border-b-4 border-brand-dark text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 text-brand-dark text-3xl shadow-sm group-hover:scale-110 transition">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-gray-800">3. Venda Premium</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Como posicionar seu produto como objeto de desejo e cobrar o preço que ele realmente vale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTORED: VISUAL FEAST (Galeria da Tentação) -->
+    <section class="py-16 bg-brand-light bg-pattern-dots">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">O Que Você Vai Aprender a Criar</h2>
+            <p class="text-center text-gray-500 mb-12">Receitas testadas que vendem sozinhas pela aparência.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="brownie-card group relative h-72 rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                    <!-- New, Different Image -->
+                    <img src="https://images.unsplash.com/photo-1599707367072-cd6ad6633a74?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Brownie Gourmet Recheado"
+                         onerror="this.src='https://images.unsplash.com/photo-1589218436045-ee320057f443?q=80&w=800&auto=format&fit=crop'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end">
+                        <p class="text-white font-bold text-xl">Brownies Recheados</p>
+                        <p class="text-pink-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">O segredo do recheio que não vaza.</p>
+                    </div>
+                </div>
+                <div class="brownie-card group relative h-72 rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Torre de Brownies"
+                         onerror="this.src='https://images.unsplash.com/photo-1606313564200-e75d5e30476d?q=80&w=800&auto=format&fit=crop'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end">
+                        <p class="text-white font-bold text-xl">Estrutura Perfeita</p>
+                        <p class="text-pink-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Casquinha e altura de vitrine.</p>
+                    </div>
+                </div>
+                <div class="brownie-card group relative h-72 rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcf8?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover" alt="Brownie com Sorvete"
+                         onerror="this.src='https://images.unsplash.com/photo-1516919549054-e08258825f80?q=80&w=800&auto=format&fit=crop'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 flex flex-col justify-end">
+                        <p class="text-white font-bold text-xl">Sobremesas Lucrativas</p>
+                        <p class="text-pink-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Aumente seu ticket médio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLD 4: SOCIAL PROOF (Carousel & Updated Text) -->
+    <section class="py-16 bg-white relative">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-6">
+                O Resultado Que Recebemos Todos os Dias
+
+            </h2>
+            <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">Estes são os feedbacks reais que recebemos dos clientes após aplicarmos o método.</p>
+
+            <!-- Carousel Container -->
+            <div class="carousel-container flex snap-x snap-mandatory overflow-x-auto pb-6">
+                <!-- Testimonial 1 -->
+                <div class="carousel-item bg-white p-2 rounded-2xl shadow-lg border border-gray-100 snap-center">
+                    <img src="Screenshot_1.png" alt="Depoimento Cliente" class="w-full rounded-xl" 
+                         onerror="this.src='https://images.unsplash.com/photo-1616031037011-087000171abe?q=80&w=600&auto=format&fit=crop&text=Depoimento+Real'">
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="carousel-item bg-white p-2 rounded-2xl shadow-lg border border-gray-100 snap-center">
+                    <img src="Screenshot_2.jpg" alt="Depoimento Cliente" class="w-full rounded-xl"
+                         onerror="this.src='https://images.unsplash.com/photo-1586810724476-c294fb7ac01b?q=80&w=600&auto=format&fit=crop&text=Cliente+Satisfeito'">
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="carousel-item bg-white p-2 rounded-2xl shadow-lg border border-gray-100 snap-center">
+                    <img src="Screenshot_3.png" alt="Depoimento Cliente" class="w-full rounded-xl"
+                         onerror="this.src='https://images.unsplash.com/photo-1620288627223-53748222d48d?q=80&w=600&auto=format&fit=crop&text=Feedback+Positivo'">
+                </div>
+            </div>
+            <p class="text-center text-gray-400 text-sm mt-4 md:hidden">Deslize para ver mais <i class="fas fa-arrow-right ml-1"></i></p>
+        </div>
+        <!-- Wave Divider for Transition -->
+        <div class="wave-divider-bottom absolute bottom-0 left-0 z-0"></div>
+    </section>
+
+    <!-- FOLD 5: PRODUCT SHOWCASE (3D Mockup & New Title) -->
+    <section class="py-16 bg-brand-light relative overflow-hidden">
+        <div class="container mx-auto px-4 max-w-5xl relative z-10 pt-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">Seu Passaporte Para a Confeitaria Profissional</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Tudo o que você precisa, organizado em um método passo a passo, simples de seguir e impossível de ignorar.</p>
+
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                
+                <!-- 3D Product Mockup Area -->
+                <div class="w-full md:w-1/2 flex justify-center perspective-1000">
+                    <div class="mockup-3d relative w-72 h-[450px] md:w-96 md:h-[550px] rounded-r-2xl rounded-l-sm shadow-2xl transition-transform duration-500">
+                        <img src="capa.jpg" alt="Capa Método Brownie de Ouro" class="w-full h-full object-cover rounded-r-2xl rounded-l-sm"
+                             onerror="this.src='https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=1000&auto=format&fit=crop'">
+                    </div>
+                </div>
+
+                <!-- Product Benefits (List) -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-gray-800 text-lg flex items-center"><i class="fas fa-book-open text-brand-dark mr-3 text-xl"></i> Módulo 1: O Segredo da Massa</h4>
+                        <p class="text-sm text-gray-600 mt-2 pl-8">A base científica para nunca mais errar o ponto ou solar a massa. Entenda o "porquê" de cada ingrediente.</p>
+                    </div>
+                    
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-gray-800 text-lg flex items-center"><i class="fas fa-star text-brand-dark mr-3 text-xl"></i> Módulo 2: 6 Receitas Gourmet</h4>
+                        <p class="text-sm text-gray-600 mt-2 pl-8">Nutella, Red Velvet, Doce de Leite, Fit, Vegano e Maracujá. Sabores que vendem o ano todo.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-gray-800 text-lg flex items-center"><i class="fas fa-camera text-brand-dark mr-3 text-xl"></i> Módulo 3: Fotografia que Vende</h4>
+                        <p class="text-sm text-gray-600 mt-2 pl-8">Técnicas simples para tirar fotos com o celular que dão água na boca dos clientes.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl border-l-4 border-brand-dark shadow-sm hover:shadow-md transition">
+                        <h4 class="font-bold text-gray-800 text-lg flex items-center"><i class="fas fa-calculator text-brand-dark mr-3 text-xl"></i> Módulo 4: Precificação Lucrativa</h4>
+                        <p class="text-sm text-gray-600 mt-2 pl-8">Pare de perder dinheiro. Planilha e aula para saber exatamente quanto cobrar e ter lucro real.</p>
+                    </div>
+
+                    <!-- Mid-Page CTA -->
+                    <div class="pt-6 text-center md:text-left">
+                        <a href="#checkout" class="btn-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full text-lg shadow-md transition duration-300 inline-block border-b-4 border-green-700">
+                            GARANTIR MEU ACESSO AO MÉTODO
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLD 6: BONUSES (Improved Visuals & Descriptions) -->
+    <section class="py-20 bg-white relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-4">Bônus Exclusivos (Valor Total: <span class="line-through text-red-400">R$ 397</span>)</h2>
+            <p class="text-center text-base text-gray-600 mb-16 font-medium">Presentes que aceleram seus resultados, disponíveis apenas hoje.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Bonus 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg text-center group hover:-translate-y-2 transition border-2 border-pink-50 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-brand-dark"></div>
+                    <div class="h-40 rounded-2xl mb-5 overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1605698803026-f607d4c6da2b?q=80&w=400&auto=format&fit=crop" alt="Apostila Brigadeiros" class="w-full h-full object-cover group-hover:scale-105 transition"
+                             onerror="this.src='https://via.placeholder.com/400x300?text=Brigadeiros'">
+                    </div>
+                    <h4 class="font-bold text-xl text-gray-800 mb-3">Apostila de Brigadeiros Gourmet</h4>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow leading-relaxed">10 receitas profissionais de brigadeiro para complementar seu cardápio e aumentar o ticket médio.</p>
+                    <div class="text-sm font-bold flex items-center justify-center gap-2 bg-gray-100 py-2 rounded-lg">
+                        <span class="text-gray-400 line-through">R$ 97,00</span>
+                        <i class="fas fa-arrow-right text-gray-400 text-xs"></i>
+                        <span class="text-green-600 font-extrabold">R$ 0,00</span>
+                    </div>
+                </div>
+                <!-- Bonus 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg text-center group hover:-translate-y-2 transition border-2 border-pink-50 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-blue-500"></div>
+                    <div class="h-40 rounded-2xl mb-5 overflow-hidden shadow-sm bg-blue-50 flex items-center justify-center">
+                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400&auto=format&fit=crop" alt="Planilha Precificação" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition"
+                              onerror="this.src='https://via.placeholder.com/400x300?text=Planilha'">
+                    </div>
+                    <h4 class="font-bold text-xl text-gray-800 mb-3">Planilha Automática de Preço</h4>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow leading-relaxed">Basta inserir o custo dos ingredientes e ela calcula o preço de venda ideal para você lucrar de verdade.</p>
+                    <div class="text-sm font-bold flex items-center justify-center gap-2 bg-gray-100 py-2 rounded-lg">
+                        <span class="text-gray-400 line-through">R$ 127,00</span>
+                        <i class="fas fa-arrow-right text-gray-400 text-xs"></i>
+                        <span class="text-green-600 font-extrabold">R$ 0,00</span>
+                    </div>
+                </div>
+                <!-- Bonus 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg text-center group hover:-translate-y-2 transition border-2 border-pink-50 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-purple-500"></div>
+                    <div class="h-40 rounded-2xl mb-5 overflow-hidden shadow-sm bg-purple-50 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=400&auto=format&fit=crop" alt="Pack Instagram" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition"
+                             onerror="this.src='https://via.placeholder.com/400x300?text=Instagram+Pack'">
+                    </div>
+                    <h4 class="font-bold text-xl text-gray-800 mb-3">Pack de Artes para Instagram</h4>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow leading-relaxed">Modelos prontos e editáveis (Canva) para divulgar seus brownies de forma profissional nas redes sociais.</p>
+                    <div class="text-sm font-bold flex items-center justify-center gap-2 bg-gray-100 py-2 rounded-lg">
+                        <span class="text-gray-400 line-through">R$ 97,00</span>
+                        <i class="fas fa-arrow-right text-gray-400 text-xs"></i>
+                        <span class="text-green-600 font-extrabold">R$ 0,00</span>
+                    </div>
+                </div>
+                <!-- Bonus 4 -->
+                <div class="bg-white p-6 rounded-3xl shadow-lg text-center group hover:-translate-y-2 transition border-2 border-pink-50 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-yellow-500"></div>
+                    <div class="h-40 rounded-2xl mb-5 overflow-hidden shadow-sm bg-yellow-50 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1631864120986-085507d57925?q=80&w=400&auto=format&fit=crop" alt="Guia Embalagens" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition"
+                             onerror="this.src='https://via.placeholder.com/400x300?text=Embalagens'">
+                    </div>
+                    <h4 class="font-bold text-xl text-gray-800 mb-3">Guia Secreto de Embalagens</h4>
+                    <p class="text-sm text-gray-600 mb-5 flex-grow leading-relaxed">Lista de fornecedores e ideias criativas para valorizar seu produto e encantar o cliente na entrega.</p>
+                    <div class="text-sm font-bold flex items-center justify-center gap-2 bg-gray-100 py-2 rounded-lg">
+                        <span class="text-gray-400 line-through">R$ 76,00</span>
+                        <i class="fas fa-arrow-right text-gray-400 text-xs"></i>
+                        <span class="text-green-600 font-extrabold">R$ 0,00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTORED: PERSONAL NOTE (Beca Brownies) -->
+    <section class="py-16 bg-brand-light bg-pattern-dots">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-pink-100 flex flex-col md:flex-row gap-10 items-center">
+                <!-- Founder Image -->
+                <div class="w-full md:w-1/3 flex-shrink-0 relative">
+                    <div class="absolute inset-0 bg-brand-dark rounded-2xl transform rotate-3 opacity-10"></div>
+                    <img src="Imagem do WhatsApp de 2025-12-03 à(s) 15.11.10_b6fa1f84.jpg" alt="Beca Brownies" class="relative rounded-2xl shadow-lg w-full object-cover h-auto border-4 border-white transform -rotate-2 hover:rotate-0 transition duration-300" 
+                         onerror="this.src='https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop'">
+                </div>
+
+                <div class="w-full md:w-2/3">
+                    <h3 class="text-3xl font-serif text-brand-dark mb-6">Uma Mensagem Pessoal da Beca</h3>
+                    
+                    <div class="prose text-gray-600 text-sm md:text-base leading-relaxed space-y-4">
+                        <p>Querida futura especialista,</p>
+                        <p>Há três anos, eu estava chorando na cozinha. Vendi 50 brownies e lucrei menos que uma faxineira ganhava por dia. Eu sabia que meus brownies eram especiais, mas me sentia uma idiota por cobrar tão pouco.</p>
+                        <p>Naquela noite, decidi parar de tentar ser a "mais barata" para ser a "melhor". E foi assim que criei este método.</p>
+                        <p class="font-bold text-gray-800 text-lg">Seu talento merece ser reconhecido. Seus brownies merecem preço justo.</p>
+                        
+                        <div class="text-right mt-8">
+                            <p class="cursive-signature text-brand-dark text-2xl">Beca Brownies</p>
+                            <p class="text-xs uppercase tracking-wide text-gray-400 mt-1">Fundadora, Receitas Secretas da Beca</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLD 7: GUARANTEE (7 Days & Seal) -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="border-2 border-dashed border-brand-dark/30 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 bg-pink-50/50">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <!-- 7-Day Guarantee Seal -->
+                    <div class="relative w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-brand-dark p-2">
+                        <div class="absolute inset-0 border-2 border-dashed border-brand-dark rounded-full animate-spin-slow opacity-50"></div>
+                        <div class="text-center">
+                            <span class="block text-4xl font-extrabold text-brand-dark leading-none">7</span>
+                            <span class="block text-xs font-bold text-gray-600 uppercase tracking-wider">Dias de</span>
+                            <span class="block text-sm font-bold text-brand-dark uppercase">Garantia</span>
+                        </div>
+                         <i class="fas fa-check-circle absolute -top-2 -right-2 text-3xl text-green-500 bg-white rounded-full"></i>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Teste Sem Riscos por 7 Dias</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Entre, acesse todo o material e faça a primeira receita. Se você não ficar impressionada com o resultado do seu primeiro brownie, eu devolvo 100% do seu dinheiro. Sem perguntas e sem letras miúdas.
+                    </p>
+                    <div class="flex items-center justify-center md:justify-start text-sm text-gray-500 font-medium">
+                        <i class="fas fa-lock text-brand-dark mr-2"></i> Risco Zero para Você.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOLD 8: PRICING & CLOSING (Updated Year) -->
+    <section class="py-20 bg-gray-900 text-white relative overflow-hidden" id="checkout">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 opacity-20 mix-blend-overlay bg-[url('https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/80"></div>
+
+        <div class="container mx-auto px-4 max-w-4xl relative z-10 text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-8 leading-tight">
+                Transforme Sua Cozinha em Uma <br><span class="text-green-400 bg-gray-800 px-2 rounded">Fonte de Renda</span> Hoje Mesmo
+            </h2>
+
+            <div class="bg-white text-gray-800 rounded-3xl shadow-2xl p-8 md:p-12 max-w-md mx-auto transform hover:scale-105 transition duration-300 border-4 border-pink-200 relative group">
+                <div class="absolute -top-4 inset-x-0 flex justify-center">
+                    <span class="bg-brand-dark text-white text-xs font-bold uppercase tracking-widest py-1 px-4 rounded-full shadow-md">Oferta por Tempo Limitado</span>
+                </div>
+                
+                <div class="flex flex-col items-center gap-2 mb-8 mt-4">
+                    <div class="text-center">
+                        <span class="text-gray-400 line-through text-xl font-medium block mb-1">De R$ 494,00</span>
+                        <span class="text-xs text-gray-500 font-semibold uppercase tracking-wide">(Método Completo + 4 Bônus)</span>
+                    </div>
+                    <div class="w-full h-px bg-gray-200 my-4"></div>
+                    <div class="text-center">
+                        <span class="text-lg text-gray-600 block mb-2">Por Apenas:</span>
+                        <span class="text-7xl font-extrabold text-brand-dark leading-none block">R$ 47</span>
+                        <span class="text-sm text-gray-500 font-medium mt-2 block">Pagamento Único</span>
+                    </div>
+                </div>
+
+                <ul class="text-left text-sm text-gray-600 mb-8 space-y-3 max-w-xs mx-auto">
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3 bg-green-100 p-1 rounded-full text-xs"></i> E-book Método Brownie de Ouro™</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3 bg-green-100 p-1 rounded-full text-xs"></i> 4 Bônus Exclusivos (R$ 397)</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3 bg-green-100 p-1 rounded-full text-xs"></i> Acesso Vitalício</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3 bg-green-100 p-1 rounded-full text-xs"></i> Garantia de 7 Dias</li>
+                </ul>
+                
+                <a href="#" class="btn-pulse bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-xl w-full block shadow-lg mb-4 transition relative overflow-hidden group">
+                    <span class="relative z-10">SIM! QUERO COMEÇAR</span>
+                    <div class="absolute inset-0 h-full w-full scale-0 rounded-full group-hover:scale-150 transition-all duration-500 ease-out bg-green-400/30"></div>
+                </a>
+
+                <div class="text-xs text-gray-400 flex justify-center gap-4 items-center">
+                    <span class="flex items-center"><i class="fas fa-bolt text-yellow-400 mr-1"></i> Acesso Imediato no E-mail</span>
+                    <div class="h-4 w-px bg-gray-200"></div>
+                    <img src="https://img.icons8.com/color/48/000000/pix.png" alt="Pix" class="h-5 opacity-70">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" class="h-5 opacity-70">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" class="h-5 opacity-70">
+                </div>
+            </div>
+
+            <div class="mt-10">
+                 <div class="inline-flex justify-center items-center gap-2 text-sm text-gray-300 bg-gray-800 px-4 py-2 rounded-full">
+                    <div class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </div>
+                    12 pessoas comprando agora
+                </div>
+            </div>
+            
+            <footer class="mt-16 pt-8 border-t border-white/10 text-xs text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2025 Receitas Secretas da Beca. Todos os direitos reservados.</p>
+                <div class="flex justify-center gap-6">
+                    <a href="#" class="hover:text-white transition">Termos de Uso</a>
+                    <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+                    <a href="#" class="hover:text-white transition flex items-center"><i class="far fa-envelope mr-2"></i> Contato</a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <!-- JS Scripts (Timer & Carousel) -->
+    <script>
+        // Countdown Timer Logic
+        function startTimer(duration, display) {
+            var timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        // Initialize Timer
+        window.onload = function () {
+            // 47 hours, 23 minutes, 15 seconds in seconds
+            var totalSeconds = (47 * 60 * 60) + (23 * 60) + 15;
+            var display = document.querySelector('#top-timer');
+            startTimer(totalSeconds, display);
+        };
+    </script>
+</body>
+</html>

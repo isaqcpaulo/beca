@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kit Brownies Profissionais - Manual Brownies Lucrativos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Como transformar brownies em um negócio de R$ 2.000+ por mês usando um sistema simples de 4 componentes, mesmo sem experiência." />
+
+  <!-- Fonte Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --pink-main: #ff4f9a;
+      --pink-dark: #e23c86;
+      --pink-soft: #ffe3f0;
+      --bg-light: #fff7fb;
+      --text-dark: #222222;
+      --text-muted: #666666;
+      --accent: #ffb6d9;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --radius-lg: 18px;
+      --radius-xl: 26px;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-dark);
+      background: #ffffff;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Layout base */
+
+    .page-wrapper {
+      background: radial-gradient(circle at top left, #ffe6f3 0, #ffffff 42%, #ffeaf5 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.4rem;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    @media (min-width: 992px) {
+      section {
+        padding: 5rem 0;
+      }
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Header / Navegação simples */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid rgba(255, 192, 217, 0.6);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .logo-text {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--pink-dark);
+    }
+
+    .nav-links {
+      display: none;
+      gap: 1.4rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--pink-main);
+    }
+
+    .nav-cta {
+      display: none;
+    }
+
+    @media (min-width: 880px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .nav-cta {
+        display: block;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.85rem 1.7rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.98rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      box-shadow: var(--shadow-soft);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 32px rgba(219, 60, 132, 0.35);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--pink-main);
+      border: 1px solid var(--accent);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+    }
+
+    /* FOLD 1 - HERO / VSL */
+
+    #fold1 {
+      padding-top: 2.5rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 900px) {
+      .hero {
+        grid-template-columns: 1.1fr 1.1fr;
+      }
+    }
+
+    .hero-pretitle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(255, 79, 154, 0.08);
+      border: 1px solid rgba(255, 151, 203, 0.9);
+      color: var(--pink-dark);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .hero-title {
+      font-size: 1.9rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 2.2rem;
+      }
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(120deg, var(--pink-main), var(--pink-dark));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 620px;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-badge {
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid rgba(255, 192, 217, 0.9);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-cta-note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      align-items: center;
+    }
+
+    .hero-trust span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* VSL Card */
+
+    .vsl-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      padding: 1.4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vsl-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1.4rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      z-index: 2;
+    }
+
+    .vsl-length {
+      position: absolute;
+      top: 1rem;
+      right: 1.4rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(255, 79, 154, 0.9);
+      color: #ffffff;
+      font-size: 0.7rem;
+      z-index: 2;
+    }
+
+    .vsl-frame {
+      position: relative;
+      width: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      background: #000000;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 0.9rem;
+    }
+
+    .vsl-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .vsl-caption {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .vsl-bullets {
+      font-size: 0.85rem;
+      color: var(--text-dark);
+      padding-left: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .vsl-bullets li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Barra de urgência */
+
+    .urgency-bar {
+      background: linear-gradient(90deg, var(--pink-dark), var(--pink-main));
+      border-radius: 999px;
+      padding: 0.7rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      font-size: 0.9rem;
+      color: #ffffff;
+      margin-bottom: 0.9rem;
+    }
+
+    .urgency-label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+    }
+
+    .urgency-timer {
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      font-family: "Poppins", monospace;
+    }
+
+    @media (max-width: 600px) {
+      .urgency-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* CTA principal */
+
+    .cta-main {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      align-items: flex-start;
+      margin-bottom: 0.4rem;
+    }
+
+    .cta-subtext {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Seções internas base */
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1.4fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 900px) {
+      .two-column {
+        grid-template-columns: 1.3fr 1.1fr;
+      }
+    }
+
+    .card-soft {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 1.6rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .card-soft.pink {
+      background: var(--bg-light);
+      border: 1px solid rgba(255, 151, 203, 0.6);
+    }
+
+    .list-check {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    .list-check li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.96rem;
+    }
+
+    .list-check span.icon {
+      margin-top: 0.15rem;
+    }
+
+    .muted {
+      color: var(--text-muted);
+    }
+
+    /* FOLD 4 - Depoimentos */
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 900px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.4rem 1.6rem;
+      border-left: 4px solid var(--pink-main);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .testimonial-name {
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+
+    .testimonial-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .testimonial-result {
+      font-weight: 500;
+      color: var(--pink-dark);
+      font-size: 0.9rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+
+    .testimonial-tag {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    .testimonial-videos {
+      margin-top: 1.8rem;
+      padding: 1.2rem 1.5rem;
+      border-radius: var(--radius-lg);
+      background: #ffffff;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .stat-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      text-align: left;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+    }
+
+    .stat-number {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--pink-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* FOLD 5 - Componentes */
+
+    .components-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+      margin-top: 1.5rem;
+    }
+
+    @media (min-width: 900px) {
+      .components-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .component-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .component-badge {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--pink-dark);
+      background: rgba(255, 192, 217, 0.4);
+      padding: 0.15rem 0.7rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .component-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .component-value {
+      font-size: 0.86rem;
+      color: var(--pink-dark);
+      margin-bottom: 0.6rem;
+    }
+
+    .component-list {
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      padding-left: 1rem;
+    }
+
+    .component-list li {
+      margin-bottom: 0.3rem;
+    }
+
+    .component-tag {
+      position: absolute;
+      top: 1.1rem;
+      right: 1.1rem;
+      font-size: 0.78rem;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    .summary-pricing {
+      margin-top: 1.7rem;
+      padding: 1.4rem 1.6rem;
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 151, 203, 0.7);
+    }
+
+    /* FOLD 6 - Bônus */
+
+    .bonus-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.3rem;
+      margin-top: 1.6rem;
+    }
+
+    @media (min-width: 900px) {
+      .bonus-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .bonus-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.4rem 1.5rem;
+      border-top: 3px solid var(--pink-main);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bonus-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .bonus-value {
+      font-size: 0.86rem;
+      color: var(--pink-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .bonus-tagline {
+      font-size: 0.88rem;
+      color: var(--text-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .bonus-list {
+      font-size: 0.86rem;
+      color: var(--text-dark);
+      padding-left: 1rem;
+    }
+
+    .bonus-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .bonus-label {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #ffffff;
+      background: var(--pink-dark);
+      padding: 0.18rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    .stack-summary {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 151, 203, 0.7);
+      text-align: center;
+    }
+
+    .stack-summary h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .stack-summary p {
+      font-size: 0.92rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .price-big {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--pink-dark);
+      margin: 0.4rem 0;
+    }
+
+    /* FOLD 7 - Garantia */
+
+    .guarantee-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      padding: 1.8rem 1.7rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+    }
+
+    @media (min-width: 900px) {
+      .guarantee-card {
+        grid-template-columns: 1.1fr 1fr;
+      }
+    }
+
+    .guarantee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(46, 204, 113, 0.09);
+      border-radius: 999px;
+      padding: 0.25rem 0.8rem;
+      font-size: 0.8rem;
+      color: #12804d;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .secure-row {
+      margin-top: 1rem;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .secure-icon-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* FOLD 8 - Justificativa de preço */
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+      margin-top: 1.4rem;
+    }
+
+    @media (min-width: 900px) {
+      .options-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .option-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.3rem 1.4rem;
+      font-size: 0.9rem;
+    }
+
+    .option-label {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .option-cost {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .option-list {
+      padding-left: 1rem;
+      font-size: 0.86rem;
+    }
+
+    .option-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .option-card.highlight {
+      border: 2px solid var(--pink-main);
+      transform: translateY(-4px);
+    }
+
+    .payment-details {
+      margin-top: 1.4rem;
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.4rem;
+      border: 1px solid rgba(255, 151, 203, 0.7);
+      font-size: 0.92rem;
+    }
+
+    .payment-details ul {
+      padding-left: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    .payment-details li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* FOLD 9 - Escassez */
+
+    .scarcity-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 1.8rem 1.7rem;
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 1.8rem;
+    }
+
+    @media (max-width: 900px) {
+      .scarcity-card {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .scarcity-list {
+      padding-left: 1rem;
+      margin: 0.6rem 0 1rem;
+      font-size: 0.9rem;
+    }
+
+    .scarcity-list li {
+      margin-bottom: 0.25rem;
+    }
+
+    .future-vision {
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.3rem;
+      font-size: 0.88rem;
+    }
+
+    .scarcity-timer-box {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      padding: 0.8rem 1rem;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 79, 154, 0.06);
+      border: 1px dashed var(--pink-main);
+    }
+
+    /* FOLD 10 - FAQ */
+
+    .faq-wrapper {
+      max-width: 820px;
+      margin-top: 1.5rem;
+    }
+
+    .faq-item {
+      border-radius: 14px;
+      background: #ffffff;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 0.9rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      cursor: pointer;
+      font-size: 0.98rem;
+      font-weight: 500;
+    }
+
+    .faq-answer {
+      padding: 0 1rem 0.9rem 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-toggle {
+      font-size: 1.4rem;
+      color: var(--pink-main);
+      flex-shrink: 0;
+    }
+
+    /* FOLD 11 - Nota da fundadora */
+
+    .founder-section {
+      display: grid;
+      grid-template-columns: 1.2fr;
+      gap: 1.6rem;
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .founder-section {
+        grid-template-columns: 1.3fr 0.9fr;
+      }
+    }
+
+    .founder-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 1.7rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.95rem;
+    }
+
+    .founder-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 151, 203, 0.2);
+      border-radius: 999px;
+      padding: 0.25rem 0.8rem;
+      font-size: 0.82rem;
+      color: var(--pink-dark);
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+    }
+
+    .founder-sign {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .founder-highlight {
+      margin-top: 0.7rem;
+      padding: 0.8rem 1rem;
+      border-left: 3px solid var(--pink-main);
+      background: var(--bg-light);
+      border-radius: 12px;
+      font-size: 0.86rem;
+    }
+
+    .founder-photo-card {
+      background: var(--bg-light);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem 1.2rem;
+      border: 1px dashed rgba(255, 151, 203, 0.7);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .founder-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 0.8rem;
+      background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 2.1rem;
+      font-weight: 700;
+    }
+
+    .founder-photo-card h4 {
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .founder-photo-card p {
+      margin-bottom: 0.25rem;
+    }
+
+    /* FOLD 12 - Fechamento final */
+
+    .final-section {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .final-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      padding: 1.9rem 1.7rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .final-paths {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.6rem;
+    }
+
+    @media (min-width: 800px) {
+      .final-paths {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .final-path-card {
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.1rem;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 151, 203, 0.6);
+    }
+
+    .final-path-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .final-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+      margin-top: 0.8rem;
+    }
+
+    .final-ps {
+      margin-top: 1.1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .final-ps p {
+      margin-bottom: 0.15rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 1.5rem 0 2.2rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: #ffffff;
+      border-top: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    @media (min-width: 768px) {
+      footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <div class="logo-mark">🍫</div>
+          <div>
+            <div class="logo-text">Manual Brownies Lucrativos</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);">Kit Brownies Profissionais</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#fold5">O que você recebe</a>
+          <a href="#fold4">Resultados</a>
+          <a href="#fold7">Garantia</a>
+          <a href="#fold10">FAQ</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="#checkout" class="btn btn-primary">
+            Garantir meu acesso
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- FOLD 1 - VSL / Acima da dobra -->
+    <section id="fold1">
+      <div class="container">
+        <div class="hero">
+          <!-- Texto à esquerda -->
+          <div>
+            <div class="hero-pretitle">
+              <span>✨ Revelado</span>
+              <span>Como transformar brownies em renda</span>
+            </div>
+            <h1 class="hero-title">
+              Como <span class="highlight">1.847 pessoas</span> saíram do zero e criaram um negócio lucrativo de brownies faturando R$ 2.000+ por mês usando um sistema simples de 4 componentes, mesmo sem experiência
+            </h1>
+            <p class="hero-subtitle">
+              Descubra o "Método dos 4 Pilares" que transforma receitas caseiras em brownies profissionais que vendem como água, sem investimento alto, sem experiência prévia, sem complicação.
+            </p>
+
+            <div class="hero-badges">
+              <div class="hero-badge">🍫 Negócio de brownies passo a passo</div>
+              <div class="hero-badge">📈 Faturamento médio de R$ 2.340 por mês</div>
+              <div class="hero-badge">🧮 Sistema completo de precificação</div>
+            </div>
+
+            <div class="hero-cta-row">
+              <a href="#checkout" class="btn btn-primary">
+                Garantir acesso imediato
+              </a>
+              <div class="hero-cta-note">
+                Assista ao vídeo de 18 minutos e descubra como transformar seus brownies em renda constante.
+              </div>
+            </div>
+
+            <div class="hero-trust">
+              <span>🔒 Checkout 100% seguro</span>
+              <span>⭐ Mais de 1.800 alunos satisfeitos</span>
+              <span>💸 Garantia de 60 dias</span>
+            </div>
+          </div>
+
+          <!-- VSL à direita -->
+          <div>
+            <div class="vsl-card">
+              <div class="vsl-tag">
+                ▶ VSL de vendas • Assista primeiro
+              </div>
+              <div class="vsl-length">
+                ⏱ 18 minutos
+              </div>
+
+              <div class="vsl-frame">
+                <!-- Substitua o SRC abaixo pelo link do seu vídeo (YouTube, Vimeo etc) -->
+                <iframe src="https://www.youtube.com/embed/SEU_LINK_DE_VÍDEO_AQUI" title="VSL Kit Brownies Profissionais" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <p class="vsl-caption">
+                "Se você sempre sonhou em ter seu próprio negócio vendendo brownies, mas não sabe por onde começar, ou se já faz brownies mas não consegue vender bem, este vídeo vai mudar tudo para você nos próximos 18 minutos..."
+              </p>
+
+              <ul class="vsl-bullets">
+                <li>🔊 Ligue o som para descobrir por que 97% das pessoas que fazem brownies nunca conseguem vender bem e como corrigir em 24h.</li>
+                <li>Entenda o "Erro da Receita Perfeita" que mata qualquer negócio de brownies antes de começar.</li>
+                <li>Veja o Método dos 4 Pilares que transforma brownies caseiros em produtos profissionais irresistíveis.</li>
+                <li>Aprenda a calcular o preço certo que garante 70% de margem de lucro sem perder clientes.</li>
+                <li>Descubra os 3 locais onde você deve vender e a estratégia de fotos que faz seus brownies venderem antes mesmo de provarem.</li>
+              </ul>
+
+              <div class="urgency-bar">
+                <div class="urgency-label">
+                  <span>⏰ Oferta especial termina em</span>
+                </div>
+                <div class="urgency-timer" id="countdown-hero">
+                  23:47:15
+                </div>
+              </div>
+
+              <div class="cta-main">
+                <a href="#checkout" class="btn btn-primary" style="width:100%;justify-content:center;">
+                  Garantir acesso imediato e economizar R$ 40 hoje
+                </a>
+                <div class="cta-subtext">
+                  Clique para receber o kit completo mais 4 bônus, no valor total de R$ 347.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 2 - Amplificação do problema -->
+    <section id="fold2">
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <h2 class="section-title">
+              A verdade cruel sobre por que seus brownies não vendem mesmo sendo deliciosos
+            </h2>
+            <p class="section-subtitle">
+              Deixe eu adivinhar. Você faz brownies incríveis, todo mundo elogia, mas quando tenta transformar isso em dinheiro, parece que nada funciona do jeito que deveria.
+            </p>
+
+            <div class="card-soft pink">
+              <p style="margin-bottom:0.7rem;">Talvez isso esteja acontecendo com você:</p>
+              <ul class="list-check">
+                <li><span class="icon">❌</span><span>Você faz, fotografa, posta e ninguém compra.</span></li>
+                <li><span class="icon">❌</span><span>Quando alguém pergunta o preço, some na hora.</span></li>
+                <li><span class="icon">❌</span><span>Você vende barato só para não perder a venda.</span></li>
+                <li><span class="icon">❌</span><span>Passa horas na cozinha e ganha uma miséria.</span></li>
+                <li><span class="icon">❌</span><span>Vê outras pessoas vendendo brownies horríveis por preços altos.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-soft">
+            <h3 style="font-size:1.05rem;margin-bottom:0.4rem;">A realidade dolorosa</h3>
+            <p class="muted" style="margin-bottom:0.8rem;">
+              Enquanto você fica na dúvida, outras pessoas estão faturando R$ 2.000, R$ 5.000 ou até R$ 10.000 por mês vendendo brownies que nem sempre são melhores que os seus.
+            </p>
+            <p style="margin-bottom:0.6rem;">Pense no custo real disso:</p>
+            <ul class="list-check">
+              <li><span class="icon">💸</span><span><b>Dinheiro perdido:</b> Se você vendesse apenas 10 brownies por semana a R$ 15 cada, seriam R$ 600 por mês. Em um ano: R$ 7.200.</span></li>
+              <li><span class="icon">⏰</span><span><b>Tempo desperdiçado:</b> Quantas horas você já gastou fazendo brownies de favor ou quase de graça.</span></li>
+              <li><span class="icon">🚪</span><span><b>Oportunidade perdida:</b> Cada dia que passa é uma chance de independência financeira que você deixa escapar.</span></li>
+              <li><span class="icon">💔</span><span><b>Autoestima afetada:</b> Cada não ou silêncio mexe com sua confiança.</span></li>
+            </ul>
+            <p style="margin-top:0.6rem;">
+              E o pior é a mentira que o mercado conta: que basta fazer o melhor brownie possível, postar no Instagram e cobrar barato para ganhar clientes. Essas soluções não só não funcionam como te mantêm presa no lugar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 3 - Revelação da solução -->
+    <section id="fold3">
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <h2 class="section-title">
+              O Método dos 4 Pilares que muda tudo no seu negócio de brownies
+            </h2>
+            <p class="section-subtitle">
+              O problema não é o brownie em si, e sim como você posiciona seu produto no mercado. Foi essa descoberta que transformou brownies caseiros em um negócio profissional e lucrativo.
+            </p>
+
+            <div class="card-soft">
+              <h3 style="font-size:1.02rem;margin-bottom:0.5rem;">Os 4 pilares de todo negócio de brownie lucrativo</h3>
+              <ul class="list-check">
+                <li><span class="icon">📘</span><span><b>Pilar 1: Receitas Estratégicas</b><br>Têm margem de lucro alta, duram vários dias sem perder qualidade, são diferenciadas no mercado e permitem versões premium.</span></li>
+                <li><span class="icon">🧮</span><span><b>Pilar 2: Precificação inteligente</b><br>Um sistema matemático que calcula a margem real, define preços que vendem, simula cenários e controla custos automaticamente.</span></li>
+                <li><span class="icon">🎨</span><span><b>Pilar 3: Identidade visual profissional</b><br>Apresentação que transmite profissionalismo, justifica preços premium e cria reconhecimento de marca online e offline.</span></li>
+                <li><span class="icon">📈</span><span><b>Pilar 4: Estratégia de vendas certeira</b><br>Sistema que atrai clientes ideais, converte interessados, gera recorrência e indicações naturais.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="card-soft pink">
+              <h3 style="font-size:1.02rem;margin-bottom:0.4rem;">Por que este método funciona quando tudo mais falha</h3>
+              <ul class="list-check">
+                <li><span class="icon">✅</span><span>Não é baseado em sorte, e sim em um sistema claro.</span></li>
+                <li><span class="icon">✅</span><span>Não depende apenas de rede social, funciona offline também.</span></li>
+                <li><span class="icon">✅</span><span>Não precisa competir por preço, cria valor único.</span></li>
+                <li><span class="icon">✅</span><span>Não exige investimento alto, usa o que você já tem.</span></li>
+              </ul>
+
+              <h4 style="font-size:0.98rem;margin:1rem 0 0.4rem;">Implementação simples em 3 passos</h4>
+              <ul class="list-check">
+                <li><span class="icon">1️⃣</span><span><b>Fundação (dias 1 a 7)</b><br>Configure receitas estratégicas, calcule preços com margem real e crie sua identidade visual básica.</span></li>
+                <li><span class="icon">2️⃣</span><span><b>Lançamento (dias 8 a 21)</b><br>Implemente o sistema de vendas, fotografe seus produtos e faça suas primeiras vendas.</span></li>
+                <li><span class="icon">3️⃣</span><span><b>Crescimento (dias 22 a 60)</b><br>Otimize o que funciona, expanda o cardápio e escale para R$ 2.000+ por mês.</span></li>
+              </ul>
+
+              <div style="margin-top:1rem;">
+                <a href="#checkout" class="btn btn-secondary">
+                  Quero aplicar o Método dos 4 Pilares
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 4 - Prova social -->
+    <section id="fold4" style="background:var(--bg-light);">
+      <div class="container">
+        <h2 class="section-title">
+          Junte-se a 1.847 pessoas que já transformaram brownies em renda extra
+        </h2>
+        <p class="section-subtitle">
+          Histórias reais de pessoas comuns que aplicaram o Kit Brownies Profissionais e hoje vivem uma nova realidade financeira usando o forno de casa.
+        </p>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div>
+                <div class="testimonial-name">Carla Mendes</div>
+                <div class="testimonial-meta">Dona de casa • São Paulo</div>
+              </div>
+              <div class="testimonial-result">De R$ 0 para R$ 3.200 em 45 dias</div>
+            </div>
+            <p class="testimonial-text">
+              "Eu estava desempregada há 6 meses quando conheci o Kit Brownies Profissionais. Em 15 dias já tinha vendido meus primeiros R$ 400. No segundo mês, faturei R$ 3.200 vendendo brownies na porta da escola e por encomenda. O que mais me impressionou foi a calculadora, finalmente entendi como formar preço sem perder dinheiro."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div>
+                <div class="testimonial-name">Roberto Silva</div>
+                <div class="testimonial-meta">Aposentado • Belo Horizonte</div>
+              </div>
+              <div class="testimonial-result">Vendeu R$ 5.600 em 60 dias</div>
+            </div>
+            <p class="testimonial-text">
+              "Depois de me aposentar, queria algo para ocupar o tempo e complementar a renda. Com o sistema do Kit, montei minha produção de brownies e em 2 meses já tinha uma cartela fixa de clientes. Vendo para padarias, cafeterias e por encomenda. É impressionante como o material ensina desde a receita até como fotografar para vender."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div>
+                <div class="testimonial-name">Ana Paula Costa</div>
+                <div class="testimonial-meta">Estudante • Rio de Janeiro</div>
+              </div>
+              <div class="testimonial-result">Pagou a faculdade vendendo brownies</div>
+            </div>
+            <p class="testimonial-text">
+              "Precisava trabalhar e estudar, e o negócio de brownies foi perfeito. Consigo produzir nos finais de semana e vender durante a semana. Com as receitas e estratégias do Kit, consegui criar 8 sabores diferentes e cobrar preços justos. Mês passado tirei R$ 2.800 líquidos."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div>
+                <div class="testimonial-name">Patricia Oliveira</div>
+                <div class="testimonial-meta">Mãe de 2 filhos • Curitiba</div>
+              </div>
+              <div class="testimonial-result">De presente para vizinhos à renda principal</div>
+            </div>
+            <p class="testimonial-text">
+              "Comecei fazendo brownies para dar de presente. Uma vizinha sugeriu vender, mas eu não sabia como precificar nem apresentar. O Kit me deu toda a estrutura, receitas, preços, embalagem, tudo. Hoje tenho lista de espera e já recusei encomendas por não ter tempo de produzir."
+            </p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div>
+                <div class="testimonial-name">João Carlos</div>
+                <div class="testimonial-meta">Ex vendedor • Salvador</div>
+              </div>
+              <div class="testimonial-result">Negócio próprio após demissão</div>
+            </div>
+            <p class="testimonial-text">
+              "Perdi o emprego na pandemia e precisava me reinventar. Minha esposa sempre fez brownies, e com o Kit transformamos isso num negócio sério. Hoje temos ponto de venda em 3 cafeterias e vendemos online também. Faturamento médio: R$ 4.200 por mês."
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-videos">
+          <strong>🎥 5 vídeo depoimentos exclusivos</strong>
+          <p>
+            Clique para assistir as histórias de transformação de alunos que saíram do zero e hoje têm renda extra consistente vendendo brownies.
+          </p>
+          <a href="#fold1" style="font-size:0.9rem;color:var(--pink-dark);display:inline-flex;align-items:center;gap:0.3rem;">
+            Assistir depoimentos em vídeo
+          </a>
+
+          <div class="stats-row">
+            <div class="stat-card">
+              <div class="stat-number">1.847</div>
+              <div class="stat-label">pessoas transformando brownies em renda</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">R$ 2.340</div>
+              <div class="stat-label">aumento médio de renda por mês</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8 dias</div>
+              <div class="stat-label">tempo médio para a primeira venda</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">94%</div>
+              <div class="stat-label">relatam resultados significativos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 5 - Detalhes do produto -->
+    <section id="fold5">
+      <div class="container">
+        <h2 class="section-title">
+          Aqui está tudo que você recebe no Kit Brownies Profissionais
+        </h2>
+        <p class="section-subtitle">
+          O Manual Brownies Lucrativos foi desenhado para ser um sistema completo, não apenas um livrinho de receitas. Você recebe tudo o que precisa para produzir, precificar, apresentar e vender brownies de forma profissional.
+        </p>
+
+        <div class="components-grid">
+          <!-- Componente 1 -->
+          <div class="component-card">
+            <div class="component-tag">Componente 1</div>
+            <div class="component-badge">🍫 E book Premium Turbinado</div>
+            <div class="component-title">Manual Completo dos Brownies Perfeitos</div>
+            <div class="component-value">Valor: R$ 147</div>
+            <p style="font-size:0.9rem;margin-bottom:0.5rem;">
+              O seu guia definitivo de 35 páginas para brownies de nível profissional:
+            </p>
+            <ul class="component-list">
+              <li>8 receitas exclusivas testadas e aprovadas, do tradicional ao gourmet.</li>
+              <li>Guia passo a passo com fotos explicativas de cada etapa.</li>
+              <li>Seção "O que deu errado?" com diagnóstico e solução para qualquer problema.</li>
+              <li>Segredos de textura para brownies cremosos, fudgy ou cake like.</li>
+              <li>Técnicas de conservação para manter qualidade por até 7 dias.</li>
+              <li>Lista de fornecedores confiáveis com melhor custo benefício.</li>
+              <li>Cronograma de produção para otimizar tempo e resultado.</li>
+            </ul>
+          </div>
+
+          <!-- Componente 2 -->
+          <div class="component-card">
+            <div class="component-tag">Componente 2</div>
+            <div class="component-badge">💰 Calculadora mágica de lucros</div>
+            <div class="component-title">Planilha profissional Excel + Google Sheets</div>
+            <div class="component-value">Valor: R$ 97</div>
+            <p style="font-size:0.9rem;margin-bottom:0.5rem;">
+              Ferramenta essencial para quem quer lucrar de verdade:
+            </p>
+            <ul class="component-list">
+              <li>Cálculo automático de custo por receita, incluindo ingredientes, tempo e embalagem.</li>
+              <li>Simulador de margem de lucro para testar 50%, 70%, 100% ou mais.</li>
+              <li>Projeção de vendas mensais com metas realistas.</li>
+              <li>Controle básico de estoque com alertas de reposição.</li>
+              <li>Relatório de lucratividade por produto.</li>
+              <li>Comparativo de preços com concorrência.</li>
+              <li>Calculadora de ponto de equilíbrio.</li>
+            </ul>
+          </div>
+
+          <!-- Componente 3 -->
+          <div class="component-card">
+            <div class="component-tag">Componente 3</div>
+            <div class="component-badge">🎨 Pack visual profissional</div>
+            <div class="component-title">Kit design premium para sua marca</div>
+            <div class="component-value">Valor: R$ 127</div>
+            <p style="font-size:0.9rem;margin-bottom:0.5rem;">
+              Tudo pronto para você apenas personalizar, mesmo que não entenda de design:
+            </p>
+            <ul class="component-list">
+              <li>6 templates de rótulos editáveis no Canva, em diferentes estilos.</li>
+              <li>3 modelos de tags para embalagens elegantes.</li>
+              <li>2 modelos de cartão de visita profissional.</li>
+              <li>5 templates para Stories do Instagram otimizados para venda.</li>
+              <li>3 templates de post para Facebook e Instagram.</li>
+              <li>Guia de cores e fontes para manter identidade visual consistente.</li>
+              <li>Tutorial completo de como editar tudo no Canva pelo celular.</li>
+            </ul>
+          </div>
+
+          <!-- Componente 4 -->
+          <div class="component-card">
+            <div class="component-tag">Componente 4</div>
+            <div class="component-badge">📈 Guia de vendas estratégico</div>
+            <div class="component-title">Como vender R$ 2.000+ em brownies</div>
+            <div class="component-value">Valor: R$ 87</div>
+            <p style="font-size:0.9rem;margin-bottom:0.5rem;">
+              PDF com 15 páginas mostrando como transformar produção em dinheiro no bolso:
+            </p>
+            <ul class="component-list">
+              <li>Estratégias de precificação por região e público.</li>
+              <li>7 canais de venda mais lucrativos, online e offline.</li>
+              <li>Técnicas de fotografia com celular que fazem seus brownies se venderem sozinhos.</li>
+              <li>Scripts de vendas para WhatsApp que convertem interessados em clientes.</li>
+              <li>Cronograma semanal de produção otimizado.</li>
+              <li>Como criar um programa de fidelidade simples e poderoso.</li>
+              <li>Estratégias sazonais para Páscoa, Natal, Dia das Mães e outras datas especiais.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="summary-pricing" id="checkout">
+          <h3 style="font-size:1.1rem;margin-bottom:0.5rem;">Cronograma de implementação sugerido</h3>
+          <p style="font-size:0.92rem;margin-bottom:0.3rem;">• Semana 1: Configure receitas e custos.</p>
+          <p style="font-size:0.92rem;margin-bottom:0.3rem;">• Semana 2: Crie a identidade visual e as fotos.</p>
+          <p style="font-size:0.92rem;margin-bottom:0.3rem;">• Semana 3: Implemente as estratégias de venda.</p>
+          <p style="font-size:0.92rem;margin-bottom:0.7rem;">• Semana 4: Otimize e escale seus resultados.</p>
+
+          <p style="font-size:0.94rem;margin-bottom:0.2rem;"><b>Total do programa principal:</b> R$ 458</p>
+          <p style="font-size:0.94rem;margin-bottom:0.8rem;">Hoje você não paga nem metade disso.</p>
+
+          <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin-top:0.6rem;">
+            <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn btn-primary">
+              Garantir meu Kit Brownies Profissionais
+            </a>
+            <div style="font-size:0.86rem;color:var(--text-muted);">
+              Pagamento único de R$ 57 ou em até 12x no cartão.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 6 - Stack de bônus -->
+    <section id="fold6" style="background:var(--bg-light);">
+      <div class="container">
+        <h2 class="section-title">
+          Quando você adquirir hoje, também recebe estes 4 bônus no valor de R$ 347
+        </h2>
+        <p class="section-subtitle">
+          Além do Manual Brownies Lucrativos, você desbloqueia uma pilha de bônus que aceleram seus resultados e aumentam seu lucro por venda.
+        </p>
+
+        <div class="bonus-grid">
+          <!-- Bônus 1 -->
+          <div class="bonus-card">
+            <div class="bonus-label">Gratuito hoje</div>
+            <div class="bonus-title">🎁 Bônus 1: 50 receitas de coberturas e recheios gourmet</div>
+            <div class="bonus-value">Valor: R$ 97</div>
+            <p class="bonus-tagline">
+              Transforme brownies simples em criações premium que justificam preços mais altos.
+            </p>
+            <ul class="bonus-list">
+              <li>20 coberturas profissionais, como ganaches, buttercream e glacês.</li>
+              <li>15 recheios especiais, incluindo doce de leite, creme de avelã e frutas.</li>
+              <li>15 finalizações gourmet com nuts caramelizados e detalhes de confeitaria.</li>
+              <li>Guia de combinações que vendem mais.</li>
+              <li>Precificação específica para versões premium que aumentam ticket médio.</li>
+            </ul>
+          </div>
+
+          <!-- Bônus 2 -->
+          <div class="bonus-card">
+            <div class="bonus-label">Só hoje</div>
+            <div class="bonus-title">🎁 Bônus 2: Template de orçamentos profissionais</div>
+            <div class="bonus-value">Valor: R$ 67</div>
+            <p class="bonus-tagline">
+              Feche mais encomendas com uma apresentação impecável e segura.
+            </p>
+            <ul class="bonus-list">
+              <li>3 modelos de orçamento totalmente editáveis.</li>
+              <li>Calculadora automática de valores dentro do arquivo.</li>
+              <li>Condições de pagamento pré formatadas.</li>
+              <li>Cláusulas de entrega e cancelamento prontas para uso.</li>
+              <li>Design profissional que transmite confiança e seriedade.</li>
+            </ul>
+          </div>
+
+          <!-- Bônus 3 -->
+          <div class="bonus-card">
+            <div class="bonus-label">Expira em breve</div>
+            <div class="bonus-title">🎁 Bônus 3: Guia de embalagens criativas</div>
+            <div class="bonus-value">Valor: R$ 87</div>
+            <p class="bonus-tagline">
+              Como embalar seus brownies para impressionar, preservar e vender mais.
+            </p>
+            <ul class="bonus-list">
+              <li>12 ideias de embalagens econômicas e elegantes.</li>
+              <li>Lista de fornecedores com melhor custo benefício.</li>
+              <li>Técnicas de conservação para transporte e entrega.</li>
+              <li>Personalizações simples que agregam muito valor percebido.</li>
+              <li>Embalagens para diferentes ocasiões e datas especiais.</li>
+            </ul>
+          </div>
+
+          <!-- Bônus 4 -->
+          <div class="bonus-card">
+            <div class="bonus-label">Vitalício</div>
+            <div class="bonus-title">🎁 Bônus 4: Acesso ao grupo VIP de vendedores</div>
+            <div class="bonus-value">Valor: R$ 96</div>
+            <p class="bonus-tagline">
+              Comunidade exclusiva para acelerar seus resultados com apoio e networking.
+            </p>
+            <ul class="bonus-list">
+              <li>Grupo no Telegram com mais de 800 vendedores ativos.</li>
+              <li>Dicas semanais de vendas, produção e divulgação.</li>
+              <li>Parcerias entre membros para aumentar vendas.</li>
+              <li>Suporte da comunidade para dúvidas do dia a dia.</li>
+              <li>Oportunidades de fornecimento em grupo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stack-summary">
+          <h4>Resumo do valor total</h4>
+          <p>Programa principal: <b>R$ 458</b></p>
+          <p>Bônus exclusivos: <b>R$ 347</b></p>
+          <p style="margin-top:0.2rem;">Valor total do pacote: <s>R$ 805</s></p>
+          <p style="margin-top:0.3rem;">Seu investimento hoje:</p>
+          <div class="price-big">Apenas R$ 57</div>
+          <p style="margin-bottom:0.7rem;">Ou menos de R$ 1,90 por dia durante 30 dias.</p>
+
+          <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn btn-primary">
+            Quero o Kit completo com os 4 bônus
+          </a>
+          <p style="margin-top:0.5rem;font-size:0.85rem;color:var(--text-muted);">
+            ⚠ Importante: os bônus 2, 3 e 4 expiram na sexta feira à meia noite. Depois disso, o valor volta para R$ 97 sem os bônus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 7 - Garantia -->
+    <section id="fold7">
+      <div class="container">
+        <h2 class="section-title">
+          Garantia de 60 dias venda ou seu dinheiro de volta
+        </h2>
+        <p class="section-subtitle">
+          Você pode testar o Kit Brownies Profissionais com total tranquilidade. Se não vender, você não paga.
+        </p>
+
+        <div class="guarantee-card">
+          <div>
+            <div class="guarantee-badge">
+              ✅ Garantia incondicional de 60 dias
+            </div>
+            <p style="font-size:0.96rem;margin-bottom:0.7rem;">
+              Use o Kit Brownies Profissionais por 60 dias completos. Implemente as receitas, use a calculadora e aplique as estratégias de venda.
+            </p>
+            <p style="font-size:0.96rem;margin-bottom:0.7rem;">
+              Se você não conseguir vender pelo menos 3 vezes o valor investido em brownies, ou se por qualquer motivo não ficar completamente satisfeita, basta enviar um email para <b>suporte@kitbrownies.com.br</b> e devolvemos 100% do seu dinheiro.
+            </p>
+            <p style="font-size:0.96rem;margin-bottom:0.7rem;">
+              Sem perguntas, sem burocracia e sem pegadinhas. Em 3 anos oferecendo este kit, nossa taxa de devolução é menor que 2%. Isso mostra o quanto o sistema funciona quando é aplicado.
+            </p>
+            <p style="font-size:0.96rem;">
+              E mais: se depois de 30 dias você ainda não tiver feito sua primeira venda, além de devolver o dinheiro, ofereço suporte pessoal por WhatsApp até você vender.
+            </p>
+          </div>
+
+          <div>
+            <h3 style="font-size:1.02rem;margin-bottom:0.4rem;">Você não tem nada a perder</h3>
+            <p class="muted" style="margin-bottom:0.8rem;">
+              O risco é totalmente meu. Você só decide se continua depois de ver na prática que funciona.
+            </p>
+
+            <div class="secure-row">
+              <div class="secure-icon-row">
+                <span>🔒</span>
+                <span>Checkout seguro com criptografia 256 bit SSL.</span>
+              </div>
+              <div class="secure-icon-row">
+                <span>🛡</span>
+                <span>Seus dados de pagamento protegidos pelas principais bandeiras.</span>
+              </div>
+              <div class="secure-icon-row">
+                <span>💳</span>
+                <span>Pagamento no cartão, PIX ou boleto, conforme sua preferência.</span>
+              </div>
+            </div>
+
+            <div style="margin-top:1.1rem;">
+              <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn btn-primary" style="width:100%;justify-content:center;">
+                Comprar com garantia total de 60 dias
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 8 - Justificativa de preço -->
+    <section id="fold8" style="background:var(--bg-light);">
+      <div class="container">
+        <h2 class="section-title">
+          Seu investimento para transformar brownies em renda
+        </h2>
+        <p class="section-subtitle">
+          Em vez de gastar anos e milhares de reais tentando descobrir tudo sozinha, você acessa um caminho encurtado e validado na prática.
+        </p>
+
+        <div class="options-grid">
+          <div class="option-card">
+            <div class="option-label">Opção 1: Tentar descobrir sozinha</div>
+            <div class="option-cost">Custo estimado: R$ 2.000+</div>
+            <ul class="option-list">
+              <li>Curso de confeitaria: R$ 800.</li>
+              <li>Curso de precificação: R$ 300.</li>
+              <li>Consultoria em marketing: R$ 500.</li>
+              <li>Designer para marca: R$ 400.</li>
+              <li>Tempo para aprender tudo: mais de 6 meses.</li>
+            </ul>
+          </div>
+
+          <div class="option-card">
+            <div class="option-label">Opção 2: Contratar profissionais</div>
+            <div class="option-cost">Custo estimado: R$ 3.800+</div>
+            <ul class="option-list">
+              <li>Confeiteiro profissional para ensinar receitas: R$ 1.200.</li>
+              <li>Contador para calcular custos: R$ 300 por mês.</li>
+              <li>Designer para identidade visual: R$ 800.</li>
+              <li>Consultor de vendas: R$ 1.500.</li>
+            </ul>
+          </div>
+
+          <div class="option-card highlight">
+            <div class="option-label">Opção 3: Kit Brownies Profissionais</div>
+            <div class="option-cost">Custo total hoje: R$ 57</div>
+            <ul class="option-list">
+              <li>Todas as receitas profissionais testadas.</li>
+              <li>Sistema completo de precificação.</li>
+              <li>Identidade visual pronta para usar.</li>
+              <li>Estratégias de venda comprovadas.</li>
+              <li>Implementação em até 30 dias.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="payment-details">
+          <p>
+            R$ 57 dividido por 30 dias é igual a cerca de <b>R$ 1,90 por dia</b>. Menos que um café para transformar completamente seu negócio de brownies.
+          </p>
+          <p style="margin-top:0.5rem;">
+            Com apenas 4 brownies vendidos a R$ 15 cada, você já recupera o investimento. Nossos clientes vendem em média 25 brownies por semana nas primeiras 4 semanas, o que representa cerca de R$ 1.500 de faturamento.
+          </p>
+          <p style="margin-top:0.7rem;"><b>Formas de pagamento:</b></p>
+          <ul>
+            <li>✅ À vista: R$ 57 via PIX, com 5% de desconto (R$ 54).</li>
+            <li>✅ Cartão: R$ 57 em até 12 vezes de R$ 4,75, sem juros.</li>
+            <li>✅ Boleto: R$ 57 à vista, com aprovação em até 2 dias úteis.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 9 - Fechamento com urgência -->
+    <section id="fold9">
+      <div class="container">
+        <h2 class="section-title">
+          Atenção: esta oferta expira em poucas horas
+        </h2>
+        <p class="section-subtitle">
+          Veja o que acontece quando o contador zerar e por que adiar esta decisão custa mais caro do que você imagina.
+        </p>
+
+        <div class="scarcity-card">
+          <div>
+            <h3 style="font-size:1.02rem;margin-bottom:0.5rem;">Quando o contador chegar a zero</h3>
+            <ul class="scarcity-list">
+              <li>❌ O preço aumenta para R$ 97.</li>
+              <li>❌ O Bônus 2 (Template de orçamentos) desaparece.</li>
+              <li>❌ O Bônus 3 (Guia de embalagens) não estará mais incluso.</li>
+              <li>❌ O Bônus 4 (Grupo VIP) volta a ser pago.</li>
+              <li>❌ Parcelamento em 12 vezes deixa de estar disponível.</li>
+            </ul>
+
+            <p style="font-size:0.95rem;margin-bottom:0.7rem;">
+              Mais importante que isso: cada dia que você adia é outro dia de brownies deliciosos que não viram dinheiro, oportunidades de venda perdidas e clientes comprando da concorrência.
+            </p>
+
+            <div class="scarcity-timer-box">
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:0.6rem;">
+                <span>⏰ Oferta especial termina em:</span>
+                <span id="countdown-scarcity" style="font-weight:700;letter-spacing:0.06em;">23:47:15</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="future-vision">
+              <p style="margin-bottom:0.5rem;"><b>Em 60 dias você pode estar:</b></p>
+              <ul style="padding-left:1rem;font-size:0.88rem;">
+                <li>Faturando R$ 2.000+ por mês vendendo brownies.</li>
+                <li>Com uma cartela fiel de clientes.</li>
+                <li>Trabalhando de casa, no seu ritmo.</li>
+                <li>Cobrando preços justos sem vergonha.</li>
+                <li>Sendo reconhecida como referência em brownies na sua região.</li>
+              </ul>
+              <p style="margin-top:0.7rem;font-size:0.88rem;">
+                Ou pode continuar exatamente onde está agora, vendo outras pessoas viverem o resultado que poderia ser seu.
+              </p>
+            </div>
+
+            <div style="margin-top:1rem;">
+              <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn btn-primary" style="width:100%;justify-content:center;">
+                Sim, quero transformar brownies em renda
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 10 - FAQ -->
+    <section id="fold10" style="background:var(--bg-light);">
+      <div class="container">
+        <h2 class="section-title">
+          Perguntas mais frequentes
+        </h2>
+        <p class="section-subtitle">
+          Se ainda ficou alguma dúvida, é bem provável que a resposta esteja aqui embaixo.
+        </p>
+
+        <div class="faq-wrapper">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Quanto tempo leva para ver resultados?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              A maioria dos nossos clientes faz a primeira venda em 7 a 10 dias. As receitas você implementa no primeiro fim de semana, a precificação no mesmo dia e as estratégias de venda na primeira semana. Nossa cliente mais rápida vendeu R$ 280 em brownies no quarto dia.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Funciona em cidade pequena?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Sim. Em cidades menores costuma haver menos concorrência e clientes mais fiéis. Temos casos de sucesso em cidades com 5 mil habitantes. O sistema funciona porque ensina a criar valor real, não depende de mercado saturado.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Não sei nada de vendas nem negócios. Vai funcionar para mim?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              O kit foi feito exatamente para iniciantes. Tudo é explicado passo a passo, com linguagem simples e exemplos práticos. Se você sabe fazer uma receita básica e usar WhatsApp, consegue implementar o sistema.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Preciso investir muito dinheiro para começar?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Não. Você provavelmente já tem boa parte dos ingredientes em casa. O investimento inicial costuma ficar entre R$ 50 e R$ 80, o que rende 20 a 30 brownies. Vendendo cada um por R$ 12 a R$ 18, o retorno é muito rápido.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Como este kit é diferente de outros cursos de doces?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              A diferença é que não ensinamos apenas receitas. Ensinamos negócio. Você aprende a calcular preço real, onde vender, como fotografar, como fechar vendas e como criar recorrência. É um sistema completo, focado em brownies, que têm ótima margem e demanda constante.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Vou conseguir competir com confeitarias grandes?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Em vez de competir, você se diferencia. Confeitarias grandes têm custos altos, atendimento impessoal e produtos padronizados. Você oferece personalização, ingredientes selecionados, atendimento próximo e preços competitivos, o que muitos clientes preferem.
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Posso produzir em apartamento?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Sim. O sistema foi pensado para produção caseira. Ensinamos como otimizar espaço e tempo. Você pode começar produzindo 10 a 15 brownies por dia e aumentar conforme a demanda cresce.
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Quanto tempo por dia preciso dedicar?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Para começar, cerca de 2 a 3 horas nos finais de semana para produção e 30 minutos por dia para vendas e atendimento. Com o tempo, você consegue organizar a produção de uma semana em poucas horas e gerenciar vendas em 15 minutos diários.
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Tem suporte se eu tiver dúvidas?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Sim. Você recebe acesso ao grupo VIP no Telegram, onde pode tirar dúvidas comigo e com outros vendedores experientes. Também respondemos perguntas por email em até 24 horas em dias úteis.
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>É realista ganhar R$ 2.000+ por mês com brownies?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Sim. Vendendo 25 brownies por semana a R$ 15 cada, você fatura R$ 1.500 por mês. Com margem de 65%, o lucro líquido fica em torno de R$ 975. Aumentando para 40 brownies por semana ou criando versões premium, é totalmente possível ultrapassar R$ 2.000 de lucro.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 11 - Nota pessoal -->
+    <section id="fold11">
+      <div class="container">
+        <h2 class="section-title">
+          Uma mensagem pessoal de Maria Silva
+        </h2>
+
+        <div class="founder-section">
+          <div class="founder-card">
+            <div class="founder-badge">
+              💌 De confeiteira para confeiteira
+            </div>
+            <p>
+              Há 3 anos, eu estava na pior fase da minha vida financeira. Recém separada, com duas filhas para criar, sem emprego fixo e com dívidas acumulando. Minha autoestima estava no chão.
+            </p>
+            <p style="margin-top:0.6rem;">
+              Foi minha filha de 8 anos que disse: "Mãe, por que você não vende seus brownies? Todo mundo fala que são os melhores do mundo".
+            </p>
+            <p style="margin-top:0.6rem;">
+              Na hora eu pensei: como uma receita de brownie vai resolver meus problemas. Mas eu estava tão desesperada que resolvi tentar. Fiz 20 brownies, fotografei de qualquer jeito com o celular e postei em um grupo do bairro. Venderam em 2 horas.
+            </p>
+            <p style="margin-top:0.6rem;">
+              Logo depois veio a realidade. Eu não sabia calcular preço, não sabia como embalar de forma profissional e não sabia onde mais vender. Eu estava ganhando trocados.
+            </p>
+            <p style="margin-top:0.6rem;">
+              Foi então que eu estudei, testei, errei muito e, com o tempo, descobri o sistema que funciona. O mesmo que estou compartilhando com você no Kit Brownies Profissionais.
+            </p>
+
+            <div class="founder-highlight">
+              <p>
+                Se você está lendo isto, é porque sabe que tem potencial para mais. Você faz brownies deliciosos, está cansada de depender apenas dos outros para sua segurança financeira e quer construir algo seu. Eu vejo você. Eu era você.
+              </p>
+            </div>
+
+            <p class="founder-sign">
+              Com carinho e torcendo pelo seu sucesso,<br>
+              <b>Maria Silva</b><br>
+              Fundadora do Kit Brownies Profissionais<br>
+              Mãe, empresária e apaixonada por brownies
+            </p>
+            <p class="founder-sign" style="margin-top:0.5rem;">
+              P.S. Ainda guardo a foto do primeiro brownie que vendi por R$ 5. Hoje cobro R$ 18 pelo mesmo brownie. A jornada vale cada centavo investido.
+            </p>
+          </div>
+
+          <div class="founder-photo-card">
+            <div class="founder-avatar">M</div>
+            <h4>Maria Silva</h4>
+            <p style="color:var(--text-muted);margin-bottom:0.6rem;">Criadora do Manual Brownies Lucrativos</p>
+            <p style="font-size:0.88rem;margin-bottom:0.6rem;">
+              Criei este kit para que nenhuma mulher precise passar pelas mesmas inseguranças financeiras que eu passei, tendo talento na cozinha e vontade de vencer.
+            </p>
+            <p style="font-size:0.86rem;">
+              Quando você entra hoje, não está apenas comprando um produto. Está entrando em uma comunidade de pessoas que se apoiam de verdade na jornada com brownies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLD 12 - Fechamento final -->
+    <section id="fold12" style="background:var(--bg-light);">
+      <div class="container final-section">
+        <h2 class="section-title">
+          Você está em uma encruzilhada agora mesmo
+        </h2>
+        <p class="section-subtitle">
+          Dois caminhos se abrem à sua frente. Um mantém tudo como está. O outro abre a porta para uma nova fase da sua vida com brownies.
+        </p>
+
+        <div class="final-card">
+          <div class="final-paths">
+            <div class="final-path-card">
+              <div class="final-path-title">Caminho 1: A inação</div>
+              <p>
+                Você fecha esta página e volta para a rotina de sempre. Continua fazendo brownies de favor, cobrando pouco, ouvindo que seus doces são incríveis, mas vendo outras pessoas lucrarem com algo que você faz melhor.
+              </p>
+              <p style="margin-top:0.4rem;">
+                Em 60 dias, provavelmente estará no mesmo lugar, talvez mais cansada e frustrada, se perguntando como teria sido se tivesse tentado.
+              </p>
+            </div>
+
+            <div class="final-path-card">
+              <div class="final-path-title">Caminho 2: A ação</div>
+              <p>
+                Você toma uma decisão hoje. Investe em um sistema testado. Começa a aplicar as receitas, a precificação e as estratégias de venda. Para de apenas sonhar e começa a construir.
+              </p>
+              <p style="margin-top:0.4rem;">
+                Em 60 dias, você pode estar com agenda cheia de encomendas, cobrando o que seus brownies valem e com uma renda extra que faz diferença real no seu orçamento.
+              </p>
+            </div>
+          </div>
+
+          <p style="font-size:0.95rem;margin-bottom:0.7rem;">
+            Imagine se daqui a 60 dias você acordar em uma quinta feira, abrir o WhatsApp e ver:
+          </p>
+          <ul style="padding-left:1rem;font-size:0.9rem;">
+            <li>3 pedidos de encomenda para o fim de semana.</li>
+            <li>2 elogios de clientes apaixonados pelos seus brownies.</li>
+            <li>1 indicação de uma amiga da cliente.</li>
+            <li>Uma padaria querendo fazer parceria.</li>
+            <li>R$ 380 de vendas confirmadas só naquele dia.</li>
+          </ul>
+
+          <div class="final-cta-row">
+            <a href="SEU_LINK_DE_CHECKOUT_AQUI" class="btn btn-primary">
+              Sim, escolho a independência agora
+            </a>
+            <a href="#fold1" class="btn btn-secondary">
+              Quero assistir de novo a VSL
+            </a>
+          </div>
+
+          <div class="final-ps">
+            <p>P.S. Você está protegida pela garantia de 60 dias. Se não vender, não paga.</p>
+            <p>P.P.S. Os bônus no valor de R$ 347 desaparecem quando o contador zerar.</p>
+            <p>P.P.P.S. Cada dia que você espera, outras pessoas estão capturando os clientes que poderiam ser seus. O melhor momento para começar é agora.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <div>
+          © <span id="year"></span> Manual Brownies Lucrativos. Todos os direitos reservados.
+        </div>
+        <div>
+          Este site não é afiliado ao Facebook, Instagram ou qualquer outra plataforma. Os resultados apresentados são exemplos e variam de pessoa para pessoa.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Atualiza ano no rodapé
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Contador regressivo simples (24 horas)
+    function startCountdown(durationSeconds, displayElements) {
+      var timer = durationSeconds;
+      setInterval(function () {
+        var hours = parseInt(timer / 3600, 10);
+        var minutes = parseInt((timer % 3600) / 60, 10);
+        var seconds = parseInt(timer % 60, 10);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        displayElements.forEach(function (el) {
+          el.textContent = hours + ":" + minutes + ":" + seconds;
+        });
+
+        if (--timer < 0) {
+          timer = 0;
+        }
+      }, 1000);
+    }
+
+    var countdownHero = document.getElementById("countdown-hero");
+    var countdownScarcity = document.getElementById("countdown-scarcity");
+    // 24 horas em segundos
+    var totalSeconds = 24 * 60 * 60;
+    startCountdown(totalSeconds, [countdownHero, countdownScarcity]);
+
+    // FAQ toggle
+    var faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach(function (item) {
+      var question = item.querySelector(".faq-question");
+      question.addEventListener("click", function () {
+        var isActive = item.classList.contains("active");
+        faqItems.forEach(function (i) {
+          i.classList.remove("active");
+          i.querySelector(".faq-toggle").textContent = "+";
+        });
+        if (!isActive) {
+          item.classList.add("active");
+          item.querySelector(".faq-toggle").textContent = "−";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
